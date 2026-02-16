@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "User Input",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "buddy_matching_agent",
+      "type": "Agent",
+      "label": "Buddy Matching Agent",
+      "nodeCategory": "agent",
+      "agent_id": "699331b725423df058acde18",
+      "name": "Buddy Matching Agent",
+      "description": "Analyzes user profile, mood, interests, and preferences to generate ranked buddy match suggestions with compatibility scores and reasoning.",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.5,
+      "top_p": 0.95
+    },
+    {
+      "id": "icebreaker_agent",
+      "type": "Agent",
+      "label": "Icebreaker & Chat Companion Agent",
+      "nodeCategory": "agent",
+      "agent_id": "699331b834e9a83c77a88a78",
+      "name": "Icebreaker & Chat Companion Agent",
+      "description": "Provides contextual icebreaker questions, conversation topic suggestions, and fun prompts based on shared interests between matched buddies.",
+      "provider": "Anthropic",
+      "model": "claude-sonnet-4-5",
+      "temperature": 0.8,
+      "top_p": 0.95
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Output",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input_node",
+      "target": "buddy_matching_agent"
+    },
+    {
+      "source": "buddy_matching_agent",
+      "target": "icebreaker_agent"
+    },
+    {
+      "source": "icebreaker_agent",
+      "target": "output_node"
+    }
+  ]
+}

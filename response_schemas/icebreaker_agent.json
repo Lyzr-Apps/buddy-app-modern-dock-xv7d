@@ -1,0 +1,81 @@
+{
+  "agent_name": "Icebreaker & Chat Companion Agent",
+  "agent_id": "699331b834e9a83c77a88a78",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_schema": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "IcebreakerResponse",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "icebreaker": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "question",
+              "category"
+            ],
+            "additionalProperties": false
+          },
+          "topic_suggestion": {
+            "type": "object",
+            "properties": {
+              "topic": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "starter_message": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "topic",
+              "description",
+              "starter_message"
+            ],
+            "additionalProperties": false
+          },
+          "fun_prompt": {
+            "type": "object",
+            "properties": {
+              "prompt": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "prompt",
+              "type"
+            ],
+            "additionalProperties": false
+          },
+          "encouragement": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "icebreaker",
+          "topic_suggestion",
+          "fun_prompt",
+          "encouragement"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

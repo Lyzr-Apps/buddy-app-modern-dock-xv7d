@@ -1,0 +1,40 @@
+{
+  "agent_name": "Buddy Matching Agent",
+  "agent_id": "699331b725423df058acde18",
+  "description": "Analyzes user profile, mood, interests, and preferences to generate ranked buddy match suggestions with compatibility scores and reasoning. Compares against available user profiles to find the best fit.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "matches": [
+      {
+        "name": "string",
+        "avatar": "string",
+        "bio": "string",
+        "interests": [
+          "string"
+        ],
+        "compatibility_score": "number",
+        "match_reason": "string",
+        "mood_alignment": "string"
+      }
+    ],
+    "summary": "string"
+  },
+  "example_response": {
+    "matches": [
+      {
+        "name": "sample string",
+        "avatar": "sample string",
+        "bio": "sample string",
+        "interests": [
+          "sample string"
+        ],
+        "compatibility_score": 0,
+        "match_reason": "sample string",
+        "mood_alignment": "sample string"
+      }
+    ],
+    "summary": "sample string"
+  }
+}

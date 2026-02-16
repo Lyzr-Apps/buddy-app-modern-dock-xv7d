@@ -1,0 +1,12 @@
+{
+  "agents": {
+    "buddy_matching_agent": {
+      "agent_id": "699331b725423df058acde18",
+      "name": "Buddy Matching Agent"
+    },
+    "icebreaker_agent": {
+      "agent_id": "699331b834e9a83c77a88a78",
+      "name": "Icebreaker & Chat Companion Agent"
+    }
+  }
+}

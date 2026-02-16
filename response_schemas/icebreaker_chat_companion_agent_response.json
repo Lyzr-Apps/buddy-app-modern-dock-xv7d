@@ -1,0 +1,40 @@
+{
+  "agent_name": "Icebreaker & Chat Companion Agent",
+  "agent_id": "699331b834e9a83c77a88a78",
+  "description": "Provides contextual icebreaker questions, conversation topic suggestions, and fun prompts based on shared interests between matched buddies. Keeps conversations engaging and flowing naturally.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "icebreaker": {
+      "question": "string",
+      "category": "string"
+    },
+    "topic_suggestion": {
+      "topic": "string",
+      "description": "string",
+      "starter_message": "string"
+    },
+    "fun_prompt": {
+      "prompt": "string",
+      "type": "string"
+    },
+    "encouragement": "string"
+  },
+  "example_response": {
+    "icebreaker": {
+      "question": "sample string",
+      "category": "sample string"
+    },
+    "topic_suggestion": {
+      "topic": "sample string",
+      "description": "sample string",
+      "starter_message": "sample string"
+    },
+    "fun_prompt": {
+      "prompt": "sample string",
+      "type": "sample string"
+    },
+    "encouragement": "sample string"
+  }
+}

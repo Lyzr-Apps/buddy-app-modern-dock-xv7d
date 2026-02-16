@@ -1,0 +1,69 @@
+{
+  "agent_name": "Buddy Matching Agent",
+  "agent_id": "699331b725423df058acde18",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_schema": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "BuddyMatchResponse",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "matches": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "avatar": {
+                  "type": "string"
+                },
+                "bio": {
+                  "type": "string"
+                },
+                "interests": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "compatibility_score": {
+                  "type": "number"
+                },
+                "match_reason": {
+                  "type": "string"
+                },
+                "mood_alignment": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "avatar",
+                "bio",
+                "interests",
+                "compatibility_score",
+                "match_reason",
+                "mood_alignment"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "summary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "matches",
+          "summary"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

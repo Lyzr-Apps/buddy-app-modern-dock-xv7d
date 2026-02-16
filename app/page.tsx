@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { callAIAgent } from '@/lib/aiAgent'
 import { cn } from '@/lib/utils'
 import { IoCompassOutline, IoChatbubbleOutline, IoPeopleOutline, IoPersonOutline, IoLeafOutline, IoChatbubblesOutline, IoGameControllerOutline, IoSearchOutline, IoSendOutline, IoCloseOutline, IoCheckmarkOutline, IoSparklesOutline, IoHeartOutline, IoChevronForwardOutline, IoFlashOutline, IoHelpCircleOutline, IoBulbOutline, IoTrashOutline } from 'react-icons/io5'
-import { FiEdit3, FiMountain, FiHeart, FiMessageCircle, FiX } from 'react-icons/fi'
+import { FiEdit3, FiCompass, FiHeart, FiMessageCircle, FiX } from 'react-icons/fi'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -29,7 +29,7 @@ const ALL_INTERESTS = [
 
 const MOODS = [
   { id: 'chill', label: 'Chill', Icon: IoLeafOutline },
-  { id: 'adventurous', label: 'Adventurous', Icon: FiMountain },
+  { id: 'adventurous', label: 'Adventurous', Icon: FiCompass },
   { id: 'deep-talk', label: 'Deep Talk', Icon: IoChatbubblesOutline },
   { id: 'fun-games', label: 'Fun & Games', Icon: IoGameControllerOutline },
 ]
